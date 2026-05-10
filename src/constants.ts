@@ -1,0 +1,48 @@
+import { FormData } from './types';
+
+export const INITIAL_FORM_DATA: FormData = {
+  institutionName: 'MOSHOOD ABIOLA POLYTECHNIC',
+  associationName: 'NACOS',
+  chapter: 'MAPOLY',
+  year: '2026',
+  surname: '',
+  firstName: '',
+  middleName: '',
+  nickname: '',
+  stateOfOrigin: '',
+  relationshipStatus: 'Single',
+  dateOfBirth: '',
+  socialMediaHandle: '',
+
+  // Template A defaults
+  skillsAndHobbies: '',
+  favoriteCourse: '',
+  bestLevel: '',
+  favoriteLecturer: '',
+  mostChallengingLevel: '',
+  bestMemorableMoment: '',
+  adviceForFreshers: '',
+  favoriteQuote: '',
+  className: '',
+  finalYearInOneWord: '',
+  mostChallengingCourse: '',
+  alternativeCareer: '',
+  bestClassBuddy: '',
+  footerOrgName: 'Dan Sugar LED Administration 2025/2026',
+  specialization: '',
+
+  // Template B defaults
+  difficultLevel: '',
+  bestCourse: '',
+  worseCourse: '',
+  favouriteLecturerB: '',
+  postHeld: '',
+  favouriteWord: '',
+  hobby: '',
+  classCrush: '',
+  bestExperienceOnCampus: '',
+  whatNextAfterSchool: '',
+  businessSkill: '',
+  socialDirectorName: '',
+  ledByName: 'Dan Sugar LED Admin 2025/2026',
+};

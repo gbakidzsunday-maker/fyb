@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&family=Playfair+Display:ital,wght@1,700;1,800&family=Outfit:wght@400;600;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Montserrat", sans-serif;
+  --font-serif: "Playfair Display", serif;
+  --font-outfit: "Outfit", sans-serif;
+
+  /* Global Colors for html2canvas reliability */
+  --color-white: #ffffff !important;
+  --color-black: #000000 !important;
+  --color-nacos-green: #0f7b3e !important;
+  --color-nacos-dark: #042f1a !important;
+  --color-accent-gold: #ffd700 !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #020d08;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  color: #ffffff;
+  font-family: var(--font-sans);
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom Utilities */
+@utility scroll-hide {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@utility preview-gradient {
+  background: radial-gradient(circle at center, rgba(15, 123, 62, 0.1) 0%, transparent 70%);
+}
+
+@utility glass-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Base Styles */
+input, textarea, select {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: white;
+  transition: all 0.2s ease;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  border-color: #0f7b3e;
+  background: rgba(255, 255, 255, 0.08);
+}
